@@ -17,6 +17,22 @@ The goal was to build an End-to-End Data Pipeline—taking raw, messy data, proc
 ⁕ Snowflake (SQL): Cloud Data Warehousing, Table Architecture, and Bulk Data Loading.
 ⁕ Power BI (DAX): Executive Dashboarding, Heatmaps, and Cross-Filtering logic.
 
+🛠️ Technical Workflow
+
+1. ETL Process (Python & Snowflake)
+⁕ Python: Used Pandas to standardize column headers and format dates.
+⁕ Snowflake: Acted as the central Data Warehouse. I designed the schema (`HOSPITAL_ER_DB`) and automated the data load.
+
+SQL Transformation Logic:
+
+<img width="1921" height="924" alt="Snowflake_ER_Pipeline" src="https://github.com/user-attachments/assets/1521d154-8b06-4dfc-9142-33851cec6472" />
+
+(Automated SQL logic classifying departments based on traffic load)
+
+2. Dashboarding (Power BI)
+⁕ Connected directly to Snowflake (simulated) to visualize real-time trends.
+⁕ Visuals: Created a "Wait Time Heatmap" to show peak hours during the day.
+
 ⚙️ The Process (Step-by-Step)
 
 👉 Step 1: Data Engineering with Python
@@ -80,9 +96,8 @@ The final dashboard focuses on Operational Efficiency and Health Equity.
 
 This dashboard allows Hospital Administrators to move from reactive (fixing problems after complaints) to proactive (scheduling staff before the Monday rush occurs). The Age_Group analysis further assists in tailoring patient care protocols for different demographics.
 
-🌐Author 
-Priyanka Deshpande 
-Data Analyst
+📝 Author & Project Credit
 
-# Hospital-Emergency-Room-Analysis
-End-to-End Data Engineering project using python, Snowflake, and Power BI
+Developer: Priyanka Deshpande
+Data Source: Hospital Emergency Room Volume & Wait Time Analysis.
+Project Goal: Portfolio demonstration of Data Engineering and Business Intelligence expertise.
